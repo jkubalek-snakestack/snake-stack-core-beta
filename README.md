@@ -1,24 +1,24 @@
 # Snake Stack Core beta
 
-Private playtest builds distributed here for Windows, Android and Fire OS. These are development candidates, with installation confirmation on Android/Fire OS. Save data stays on each device.
+## Current beta: 0.38.0
 
-## Current beta: 0.37.0
+[Download Core 0.38.0](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/tag/v0.38.0-beta), or use **Settings → Version & updates**. Every player and Observer must update together to **multiplayer protocol 9**. Existing saves and preferences stay on each device.
 
-[Download Core 0.37.0](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/tag/v0.37.0-beta), or use **Settings → Version & updates** in an installed build.
+- Larger, stable six-row challenge/practice boards; long boards retain manual scrolling.
+- Gentle selection and placement feedback, optional light Android haptics, and reduced-motion support.
+- Consistent menus with pinned primary actions, readable wrapping and stable scroll gutters.
+- Temporary, non-blocking move guidance through Why? and explanations for unavailable actions.
+- Nearby Wi-Fi/LAN room search on Windows/Android/Fire OS, followed by a connection review. Saved forms and shared invitations remain available when network discovery is blocked.
+- Animated round totals toward 100. Every player chooses Ready for next round before the host starts the shared countdown.
+- Distinct original countdown, STACK, Bite and Stuck cues, with important-call priority and optional call sounds. The existing CC0 rattlesnake finish remains.
+- Restrained Observer long-word, projected-lead and finish highlights. Full boards and current hands stay visible; focusing a player gives a closer view.
+- English meanings plus offline Portuguese coverage for **5,850 spellings / 9,045 senses**, with accented lemmas and source links. [OpenWordnet-PT](https://github.com/own-pt/openWordnet-PT), CC BY 4.0; authors and license are bundled. Accepted dictionaries are unchanged. Words outside bundled coverage have Wiktionary/Wikcionário references.
+- Independent reading sizes and non-color board status symbols, with keyboard/controller focus and optional motion/sound/haptic preferences.
 
-- Short challenge boards now stay anchored at START during hand selection, tap placement, Undo and view changes. Fitted boards no longer scroll into empty space; longer boards still scroll manually.
-- Two complete new appearances: **Dune** (sandstone, espresso, copper) and **Plum** (smoky plum, champagne, rose). Choose or preview them in Settings → Appearance. They cover gameplay, menus, records and Observer.
+Android includes ARMv7 for the 32-bit Fire TV Cube, ARM64 and x86_64. Install over the existing app; do not uninstall or clear player data. Physical tablet/Fire TV behavior and cross-device discovery still require retesting. The host emulator remains unavailable, so successful Android runtime acceptance is not claimed.
 
-- Swap by selecting a letter first, dragging onto Swap, or choosing Swap first. An expired opportunity has a two-second disabled transition before Stuck Snake returns.
-- Multiplayer totals carry across rounds toward 100. The host can start the next shared countdown directly, or reopen the lobby to adjust the table. All players and Observer screens need **protocol 8**.
-- Touch placement keeps the board viewing position. Room codes remain visible during play. Foreground game rooms and Observer screens keep devices awake.
-- Home quietly checks the signed update feed and marks Settings when an update is available. No automatic installation or game interruption.
-- SNAKE STACK! now uses a short rattlesnake finish cue. Sound: craigsmith's [G12-26-Rattlesnake Rattle.wav](https://freesound.org/people/craigsmith/sounds/437958/), CC0 1.0; a 1.65-second excerpt of the public preview with a soft fade. Sound credit is also in Settings.
+iOS is a separate unsigned Xcode export requiring Mac compilation/signing and device tests. Direct connections use the local-network permission explanation. Automatic iOS UDP discovery is disabled pending Apple network provisioning or a native Bonjour implementation.
 
-The Android APK retains **ARMv7** for the 32-bit Fire TV Cube, plus ARM64 and x86_64. Update over the existing app; do not uninstall or clear game data. Physical Fire TV permission/launcher behavior and tablet touch feel still require device testing. iOS needs the separate unsigned Xcode export and Mac/signing; it is not an installable package here.
+These are development candidates. Desktop Unity render/input, gameplay/network contracts, package signing/branding checks and the signed HTTPS update path are verified separately from physical-device acceptance.
 
-Desktop Unity layout and simulated touch checks passed for this candidate. The Android emulator failed before Android booted; the APK passed compilation and package checks, but its runtime behavior still needs a physical tablet retest.
-
-## Signed update feed
-
-Installed clients verify the signed beta notice and downloaded package size/hash. [Stable beta feed](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/download/beta-feed/beta.json). Versioned packages remain available on their release pages.
+[Stable signed beta feed](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/download/beta-feed/beta.json). Clients verify the notice signature and package size/hash; updates never install automatically during gameplay.
