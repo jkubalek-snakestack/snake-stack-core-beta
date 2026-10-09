@@ -1,23 +1,19 @@
 # Snake Stack Core beta
 
-Latest beta: Play has a distinct accent; update source disclosure reads **Details**. Fire TV denied installation-settings shortcuts show manual steps, and remote menu navigation safely handles fixed Close/Back controls. TV launchers gain a plain brand bitmap fallback; phones retain adaptive icons. The physical Cube Home thumbnail and package installer still need a retest. Multiplayer protocol remains **7**.
+Private playtest builds distributed here for Windows, Android and Fire OS. These are development candidates, with installation confirmation on Android/Fire OS. Save data stays on each device.
 
-On Fire TV, allow Snake Stack Core Dev under Settings > My Fire TV (or Device & Software) > Developer options > Install unknown apps, then return and select Install update. Do not uninstall or clear Core data to update. Amazon Home catalog artwork may require a separate Amazon listing; none was published here.
+## Current beta: 0.36.0
 
-Windows, Android and Fire OS beta downloads for Snake Stack Core.
+[Download Core 0.36.0](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/tag/v0.36.0-beta), or use **Settings → Version & updates** in an installed build.
 
-## Download and play
+- Swap by selecting a letter first, dragging onto Swap, or choosing Swap first. An expired opportunity has a two-second disabled transition before Stuck Snake returns.
+- Multiplayer totals carry across rounds toward 100. The host can start the next shared countdown directly, or reopen the lobby to adjust the table. All players and Observer screens need **protocol 8**.
+- Touch placement keeps the board viewing position. Room codes remain visible during play. Foreground game rooms and Observer screens keep devices awake.
+- Home quietly checks the signed update feed and marks Settings when an update is available. No automatic installation or game interruption.
+- SNAKE STACK! now uses a short rattlesnake finish cue. Sound: craigsmith's [G12-26-Rattlesnake Rattle.wav](https://freesound.org/people/craigsmith/sounds/437958/), CC0 1.0; a 1.65-second excerpt of the public preview with a soft fade. Sound credit is also in Settings.
 
-Open [the latest game beta](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/tag/v0.35.0-beta) and choose the Windows ZIP or Android APK.
+The Android APK retains **ARMv7** for the 32-bit Fire TV Cube, plus ARM64 and x86_64. Update over the existing app; do not uninstall or clear game data. Physical Fire TV permission/launcher behavior and tablet touch feel still require device testing. iOS needs the separate unsigned Xcode export and Mac/signing; it is not an installable package here.
 
-- Windows: extract the ZIP, then open **Snake Stack Core.exe** inside its folder.
-- Android / Fire TV: install the APK and confirm installation when the device asks. This beta includes 32-bit ARM support for Fire TV.
-- Multiplayer: every player and Observer should use **v.035 / 0.35.0**, which uses multiplayer protocol **7**.
+## Signed update feed
 
-## Updates inside Core
-
-Core v.033 and newer include **Settings → Check for Updates**. Return to Home and leave multiplayer/Observer before installing an update. Android and Fire TV require installation confirmation. Older Core versions need an initial manual installation of an updater-equipped build.
-
-The [stable signed beta feed](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/download/beta-feed/beta.json) is used by the app. The **Core beta update feed** release holds this notice; versioned game releases hold the actual downloads.
-
-This repository distributes compiled beta packages and their signed update notices. iOS testing continues through the separate Xcode/TestFlight development path.
+Installed clients verify the signed beta notice and downloaded package size/hash. [Stable beta feed](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/download/beta-feed/beta.json). Versioned packages remain available on their release pages.
