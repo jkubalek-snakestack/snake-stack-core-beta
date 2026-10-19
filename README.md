@@ -1,14 +1,14 @@
 # Snake Stack Core beta
 
-## Current beta: 0.83.1
+## Current beta: 0.84.0
 
-[Download Core 0.83.1](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/tag/v0.83.1-beta), or use the download icon beside **Setup** in the game. Use the same release across your room; multiplayer protocol remains **23**. Install over the existing beta to retain local player data.
+[Download Core 0.84.0](https://github.com/jkubalek-snakestack/snake-stack-core-beta/releases/tag/v0.84.0-beta), or use the download icon beside **Setup** in the game. Use the same release across your room; multiplayer protocol remains **23**. Install over the existing beta to retain local player data.
 
-- On touchscreens, swipe over the board to scroll, including over placed letters. Briefly hold a placed tile before dragging it. Quick swipes do not count as Return.
-- Help circles stay beside their controls with separate touch targets, including narrow Stack Tracks options. Opening help does not change a setting or begin a round.
-- Active swipes keep control of the viewport over queued view resets. Album collection tabs retain readable text as their backgrounds change.
+- Compact screens show one relevant tutorial, selection or route message at a time, keeping the hand and actions usable. Selecting a letter keeps the actions in place; menus stop unfinished Active area movement. Narrow-phone timers leave more room for the score and mode.
+- Observer bonus squares have subtle corner glints on empty/filled tiles, close-ups and finishing snakes. Each board keeps its own positions; the glints adapt to theme contrast.
+- Portuguese Swap, Draw and selection labels remain consistent between interface refreshes. No new menu row or gameplay rule is added.
 
-This corrective patch preserves 0.83's room recovery and host handoff, progress/account safeguards, Stack Tracks mix recovery and signed-update hardening. Twelve relevant native suites and an actual isolated signed upgrade passed. Physical touch, device performance and controller comfort remain separate acceptance tasks; the large layout screenshot sweep was interrupted by unexpected PC restarts, so full-sweep acceptance is not claimed.
+Earlier swipe-to-scroll/hold-to-move behavior, separate help targets, room recovery/host handoff, progress/account safeguards, Stack Tracks mix recovery and signed-update hardening are preserved. Fifteen relevant native suites, 82 bounded screen cases and an actual isolated signed upgrade passed. The screen cases cover eight viewports, both languages, all reading sizes and all 31 appearances. These are desktop simulations; actual touch/controllers, screen readers and device performance remain separate acceptance tasks. Earlier unexplained PC restarts remain unassigned to a cause; the old monolithic layout sweep stays retired.
 
 The game includes ten original Stack Tracks scores and Archive, twenty character worlds, Merriton, completed-board inspection, personal keyboard/controller access and optional Cadence/Ensemble prototypes. Multiplayer > **On this screen** adapts independent boards to the device, inputs and available space; phones keep one board.
 
